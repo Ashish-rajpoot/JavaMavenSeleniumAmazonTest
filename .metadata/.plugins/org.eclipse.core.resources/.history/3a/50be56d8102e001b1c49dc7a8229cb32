@@ -1,0 +1,9 @@
+package com.ecom.amazon.tests.amazon.tests;
+
+public class AmazonSiteTest {
+
+	public AmazonSiteTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.ecom.amazon.tests.amazon.tests;
+
+public class Snippet {
+	@Before
+			public void startBrowser() {
+				App.initWebDriver();
+			}
+			
+			@Test
+			public void verifyTheAmazonSite() {
+			WebDriver drive =RunEnvironment.getWebDriver();
+			final String siteUrl = "https://www.amazon.in/";
+			drive.get(siteUrl);		
+			assertEquals(siteUrl,drive.getCurrentUrl());
+			}
+			@After
+			public void closeBrowser() {
+				App.shutDownDriver();
+			}
+	
+}
+

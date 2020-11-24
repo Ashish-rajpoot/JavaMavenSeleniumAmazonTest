@@ -1,0 +1,9 @@
+package com.ecom.amazon.tests.amazon.tests;
+
+public class AmazonInputResourcesTest {
+
+	public AmazonInputResourcesTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

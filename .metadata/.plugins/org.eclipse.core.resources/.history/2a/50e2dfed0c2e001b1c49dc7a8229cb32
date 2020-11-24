@@ -1,0 +1,32 @@
+package com.ecom.amazon.tests;
+
+import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LoadAmazonHomePage {
+	
+	public static void main(String[] args) {
+		// Step 1: Create a URL
+		final String siteUrl = "https://www.amazon.in";
+		// Step 2: Set Properties (Set selenium webdriver path and classes)
+		System.setProperty("webdriver.gecko.driver","F:\\Selenium Project\\Amazon-Project\\driver\\geckodriver.exe");
+		// Step 3: Instantiate web drover object --> Open page
+		WebDriver driver = new FirefoxDriver();
+		driver.get(siteUrl);
+//		System.out.println(driver.getTitle());
+		
+		String expectedValue = "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in";
+		
+		if(expectedValue.equals(driver.getTitle()))
+			System.out.println("Test Successfull");
+		else 
+			System.out.println("Test is failed");
+		
+		// Step 4: Search a text
+		// Step 5: Verify test;
+		// Step 6: Close browser;
+		driver.close();
+	}
+
+}
